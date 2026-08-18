@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>H & R Restaurant</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+    >
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER / NAVIGATION ================= -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3" href="#home">
+                    HR
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNav"
+                    aria-controls="mainNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reservation">Reservation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+    <main>
+
+        <section id="home" class="hero-section">
+            <div class="container text-center text-white">
+                <h1 class="display-3 fw-bold">
+                    Welcome to H & R
+                </h1>
+
+                <p class="lead mt-3">
+                    Authentic flavours, beautiful moments and unforgettable dining.
+                </p>
+
+                <a href="#menu" class="btn btn-warning btn-lg mt-3">
+                    Explore Our Menu
+                </a>
+
+                <button
+                    type="button"
+                    class="btn btn-outline-light btn-lg mt-3 ms-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#bookingModal"
+                >
+                    Book a Table
+                </button>
+            </div>
+        </section>
+
+
+        <!-- ================= MENU SECTION ================= -->
+        <section id="menu" class="py-5 bg-light">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Our Menu</h2>
+                    <p class="text-muted">
+                        Fresh ingredients and delicious recipes prepared with care.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                    <!-- Menu Card 1 -->
+                    <article class="menu-card">
+                        <img
+                            src="./Double Cheeseburger.png"
+                            alt="Classic cheeseburger"
+                        >
+
+                        <div class="p-4">
+                            <h3>Classic Burger</h3>
+                            <p>
+                                Juicy grilled beef, fresh vegetables and our
+                                special house sauce.
+                            </p>
+
+                            <div class="price">$4</div>
+                        </div>
+                    </article>
+
+
+                    <!-- Menu Card 2 -->
+                    <article class="menu-card">
+                        <img
+                            src="./Pizza.png"
+                            alt="Italian pizza"
+                        >
+
+                        <div class="p-4">
+                            <h3>Italian Pizza</h3>
+                            <p>
+                                Wood-fired pizza topped with fresh mozzarella,
+                                tomatoes and basil.
+                            </p>
+
+                            <div class="price">$5</div>
+                        </div>
+                    </article>
+
+
+                    <!-- Menu Card 3 -->
+                    <article class="menu-card">
+                        <img
+                            src="./Gourmet Pasta Dish.png"
+                            alt="Creamy pasta"
+                        >
+
+                        <div class="p-4">
+                            <h3>Creamy Pasta</h3>
+                            <p>
+                                Homemade pasta served with creamy sauce,
+                                herbs and parmesan.
+                            </p>
+
+                            <div class="price">$4</div>
+                        </div>
+                    </article>
+
+
+                    <!-- Menu Card 4 -->
+                    <article class="menu-card">
+                        <img
+                            src="./Drumstick.png"
+                            alt="Drumstick"
+                        >
+
+                        <div class="p-4">
+                            <h3>Drumstick</h3>
+                            <p>
+                                Juicy,glazed drumsticks topped with sesame and served fresh on crisp lettuce.
+                            </p>
+
+                            <div class="price">$5</div>
+                        </div>
+                    </article>
+
+
+                    <!-- Menu Card 5 -->
+                    <article class="menu-card">
+                        <img
+                            src="./Chocolate Cake.png"
+                            alt="Chocolate cake"
+                        >
+
+                        <div class="p-4">
+                            <h3>Chocolate Cake</h3>
+                            <p>
+                                Rich chocolate cake finished with creamy
+                                chocolate frosting.
+                            </p>
+
+                            <div class="price">$3</div>
+                        </div>
+                    </article>
+
+
+                    <!-- Menu Card 6 -->
+                    <article class="menu-card">
+                        <img
+                            src="./Rustic Gourmet Grilled Cheese with Herb Garnish.png"
+                            alt="Fresh dessert"
+                        >
+
+                        <div class="p-4">
+                            <h3>Rustic Gourmet Grilled cheese with Herb Garnish </h3>
+                            <p>
+                                Golden-grilled bread layered with rich,melty cheese and delicious savory fillings.
+                            </p>
+
+                            <div class="price">$4</div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= RESERVATION SECTION ================= -->
+        <section id="reservation" class="reservation-section py-5">
+            <div class="container">
+
+                <div class="text-center text-white mb-4">
+                    <h2 class="section-title">Make a Reservation</h2>
+                    <p>Reserve your table and enjoy an unforgettable experience.</p>
+                </div>
+
+                <div class="reservation-box mx-auto">
+
+                    <form>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                            <div>
+                                <label for="name" class="form-label">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    class="form-control"
+                                    placeholder="Enter your name"
+                                    required
+                                >
+                            </div>
+
+                            <div>
+                                <label for="email" class="form-label">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    class="form-control"
+                                    placeholder="Enter your email"
+                                    required
+                                >
+                            </div>
+
+                            <div>
+                                <label for="date" class="form-label">
+                                    Date
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="date"
+                                    class="form-control"
+                                    required
+                                >
+                            </div>
+
+                            <div>
+                                <label for="time" class="form-label">
+                                    Time
+                                </label>
+
+                                <input
+                                    type="time"
+                                    id="time"
+                                    class="form-control"
+                                    required
+                                >
+                            </div>
+
+                            <div>
+                                <label for="guests" class="form-label">
+                                    Number of Guests
+                                </label>
+
+                                <select id="guests" class="form-select">
+                                    <option>1 Guest</option>
+                                    <option>2 Guests</option>
+                                    <option>3 Guests</option>
+                                    <option>4 Guests</option>
+                                    <option>5 Guests</option>
+                                    <option>6+ Guests</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="message" class="form-label">
+                                    Special Request
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="message"
+                                    class="form-control"
+                                    placeholder="Optional"
+                                >
+                            </div>
+
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button
+                                type="submit"
+                                class="btn btn-warning px-5"
+                            >
+                                Reserve Now
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= REVIEWS ================= -->
+        <section id="reviews" class="py-5 bg-light">
+
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Customer Reviews</h2>
+                    <p class="text-muted">
+                        See what our happy customers have to say.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                    <article class="review-card">
+                        <div class="stars">Great</div>
+                        <p>
+                            "Amazing food and excellent service.
+                            The atmosphere was perfect!"
+                        </p>
+                        <h5>— Priya</h5>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="stars">Excellent</div>
+                        <p>
+                            "The pizza was delicious and the staff
+                            were extremely friendly."
+                        </p>
+                        <h5>— Rahul</h5>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="stars">Good</div>
+                        <p>
+                            "A wonderful place for a family dinner.
+                            Highly recommended!"
+                        </p>
+                        <h5>— Ananya</h5>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= GALLERY ================= -->
+        <section id="gallery" class="py-5">
+
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Gallery</h2>
+                    <p class="text-muted">
+                        A glimpse of our food and restaurant.
+                    </p>
+                </div>
+
+                <div class="gallery-grid">
+
+                    <img
+                        src="./Screenshot 2026-08-18 110107.png"
+                        alt="Restaurant interior"
+                    >
+
+                    <img
+                        src="./Drumstick.png"
+                        alt="Restaurant dining area"
+                    >
+
+                    <img
+                        src="./Gourmet Pasta Dish.png"
+                        alt="Restaurant food"
+                    >
+
+                    <img
+                        src="./Rustic Gourmet Grilled Cheese with Herb Garnish.png"
+                        alt="Fine dining table"
+                    >
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-dark text-white text-center py-4">
+
+        <div class="container">
+
+            <h3>HR Restaurant</h3>
+
+            <p class="mb-2">
+                Delicious food. Beautiful memories.
+            </p>
+
+            <p class="small mb-0">
+                ©  HR Restaurant. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= BOOTSTRAP BOOKING MODAL ================= -->
+    <div
+        class="modal fade"
+        id="bookingModal"
+        tabindex="-1"
+        aria-labelledby="bookingModalLabel"
+        aria-hidden="true"
+    >
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel">
+                        Book Your Table
+                    </h5>
+
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <form>
+
+                        <div class="mb-3">
+                            <label for="modalName" class="form-label">
+                                Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="modalName"
+                                class="form-control"
+                                required
+                            >
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="modalDate" class="form-label">
+                                Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="modalDate"
+                                class="form-control"
+                                required
+                            >
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="modalGuests" class="form-label">
+                                Guests
+                            </label>
+
+                            <select id="modalGuests" class="form-select">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6+</option>
+                            </select>
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="btn btn-dark w-100"
+                        >
+                            Confirm Booking
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap 5 JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>
