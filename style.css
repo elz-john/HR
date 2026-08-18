@@ -261,9 +261,7 @@ footer h3 {
         margin: 10px auto !important;
     }
 
-    .reservation-box {
-        padding: 20px;
-    }
+    
 
     .gallery-grid {
         grid-template-columns: 1fr;
